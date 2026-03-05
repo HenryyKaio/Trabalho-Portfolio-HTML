@@ -4,25 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfólio</title>
+    <title>portfólio do Henry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kings&family=Mountains+of+Christmas:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/12180/12180450.png">
 
     <style>
         h1 {
-            font-family: "Mountains of Christmas", serif;
-            font-weight: 700;
+            font-family: "Jolly Lodger", system-ui;
+            font-weight: 400;
             font-style: normal;
-            font-size: 95px;
+            font-size: 90px;
+            color: rgb(210, 211, 248);
             text-align: center;
-            margin: 0;
+            margin: 0px 20px 100px 20px;
         }
 
-        body{
+        body {
             background-color: rgb(71, 202, 202);
+            background-image: linear-gradient(to right, rgb(75, 163, 245), rgb(63, 15, 196));
+            background-attachment: fixed;
+            background-size: cover;
+            font-size: larger;
+            margin: 0px;
+            padding: 0px;
         }
+
+        p {
+            margin: 30px 10px 15px 10px;
+            text-align: justify;
+        }
+
+        .sobre {
+            display: flex;
+            width: 100vw;
+            gap: 50px;
+            padding-top: 55px;
+        }
+
+        .caixa1 h2, .caixa2 h2{
+            text-align: center;
+        }
+
+        .caixa1, .caixa2{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+
+
+
+
     </style>
 
 </head>
@@ -30,6 +63,22 @@
 <body>
 
     <h1>Meu Portfólio Pessoal</h1>
+
+    <p>Esse site é um site acadêmico feito para um trabalho da disciplina de Desenvolvimento Web do curso de
+        Desenvolvimento de sistemas do Instituto Federal do Paraná campus Foz do iguaçu.</p><br>
+    <p>É um site de portfólio pessoal, com o intuito de mostrar um pouco mais de mim, Henry Kaio Jackowski, e meus
+        projetos pessoais, incluindo o próprio site.</p>
+
+        <div class="sobre">
+            <div class="caixa1">
+                <h2>Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident ab enim illum cum quam doloremque possimus neque nostrum dignissimos praesentium ducimus ex recusandae animi hic ipsa cupiditate, perspiciatis nemo.</p>
+            </div>
+            <div class="caixa2">
+                <h2>Meus projetos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit praesentium accusamus debitis ipsum, quisquam eaque alias corrupti quod temporibus beatae vitae, quae placeat repellat maxime quis in. Voluptatibus, quae sint!</p>
+            </div>
+        </div>
 
 </body>
 
