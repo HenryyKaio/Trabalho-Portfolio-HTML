@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4516/4516741.png">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4658/4658800.png">
 
     <style>
         * {
@@ -50,6 +50,10 @@
             padding-top: 55px;
         }
 
+        .sobre p{
+            text-align: justify;
+        }
+
         .caixa1 h2,
         .caixa2 h2 {
             text-align: center;
@@ -59,9 +63,28 @@
         .caixa2 {
             margin-left: 200px;
             margin-right: 195px;
-            background-color: rgb(140, 172, 246);
+            display: flex;
+            /* Ativa o Flexbox */
+            flex-direction: column;
+            /* Empilha os itens verticalmente */
+            align-items: center;
+            /* (Opcional) Centraliza horizontalmente */
+            gap: 80px;
+            /* (Opcional) Cria espaçamento entre as divs */
+            width: 100%;
+        }
+
+        .caixa2 {
+            margin-top: 130px;
+        }
+
+        .conteudo1,
+        .conteudo2 {
+            background-color: rgba(140, 172, 246, 0.692);
             border-radius: 10px;
             box-shadow: 10px 5px 20px black;
+            width: 100%;
+            padding: 30px;
         }
 
         .menu {
@@ -109,9 +132,54 @@
             transform: scaleX(1);
         }
 
-        .menuLinks:hover{
-            font-size:xx-large;
+        .instagram {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
         }
+
+        .instagram img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .instagram:hover {
+            transform: scale(1.2);
+        }
+
+        .github {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .github img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .github:hover {
+            transform: scale(1.2);
+        }
+
     </style>
 
 </head>
@@ -122,9 +190,17 @@
         <ul class="menuLista">
             <li><a href="index.html" class="menuLinks">Início</a></li>
             <li><a href="SobreMim.html" class="menuLinks">Sobre mim</a></li>
-            <li><a href="" class="menuLinks">Meus Projetos</a></li>
+            <li><a href="MeusProjetos.html" class="menuLinks">Meus Projetos</a></li>
         </ul>
     </div>
+
+    <a href="https://www.instagram.com/hkaiojack/" class="instagram"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiHVhg2FAN8Md31MZX9Trr6NmMr-sda7tzQ&s"
+            alt="Instagram"></a>
+
+    <a href="https://github.com/HenryyKaio" class="github"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKsrv2oCd-ebfgI95Xm6pqcsEh3gLJodqRA&s"
+            alt="Github"></a>
 
     <h1>Meu Portfólio Pessoal</h1>
 
@@ -137,25 +213,53 @@
 
     <div class="sobre">
         <div class="caixa1">
-            <h2>Sobre a Instituição</h2>
-            <p>O Instituto Federal do Paraná (IFPR) é uma instituição pública federal de ensino vinculada ao Ministério
-                da Educação (MEC) por meio da Secretaria de Educação Profissional e Tecnológica (Setec). É voltada à
-                educação superior, básica e profissional, especializada na oferta gratuita de educação profissional e
-                tecnológica nas diferentes modalidades e níveis de ensino.
-                <br>
-                A instituição foi criada em dezembro de 2008 através da Lei 11.892, que instituiu a Rede Federal de
-                Educação Profissional e Tecnológica e os 38 institutos federais hoje existentes no país. Com a Lei em
-                vigor, a Escola Técnica da Universidade Federal do Paraná (ET-UFPR) foi transformada no IFPR, que hoje
-                possui autonomia administrativa e pedagógica.
-            </p>
+            <div class="conteudo1">
+                <h2>Sobre a Instituição</h2>
+                <p>O Instituto Federal do Paraná (IFPR) é uma instituição pública federal de ensino vinculada ao
+                    Ministério
+                    da Educação (MEC) por meio da Secretaria de Educação Profissional e Tecnológica (Setec). É voltada à
+                    educação superior, básica e profissional, especializada na oferta gratuita de educação profissional
+                    e
+                    tecnológica nas diferentes modalidades e níveis de ensino.
+                    <br>
+                    A instituição foi criada em dezembro de 2008 através da Lei 11.892, que instituiu a Rede Federal de
+                    Educação Profissional e Tecnológica e os 38 institutos federais hoje existentes no país. Com a Lei
+                    em
+                    vigor, a Escola Técnica da Universidade Federal do Paraná (ET-UFPR) foi transformada no IFPR, que
+                    hoje
+                    possui autonomia administrativa e pedagógica.
+                </p>
+            </div>
+
+            <div class="conteudo1">
+                <h2>Sobre o Trabalho</h2>
+                <p>O trabalho passado pelo professor da disciplina de Desenvolvimento Web Jefferson Chaves(não o do
+                    passinho) consiste em criar um site html que sirva como um portfólio pessoal, onde estarão anexados
+                    os trabalhos e informações importantes sobre mim, Henry Kaio Jackowski.
+                </p>
+                <p>
+                    Baseado nisso, este site é criado para mostrar os meus projetos pessoais, todos anexados ao github e falar um pouco de quem eu sou.</p>
+
+            </div>
         </div>
         <div class="caixa2">
-            <h2>Projetos do IFPR</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere veniam alias quibusdam hic, ex
-                vitae, ullam natus illo nemo saepe omnis? Dolor officia ipsam voluptates pariatur, eos et impedit?
-                Quibusdam quod atque iusto perferendis dolores? Laboriosam nisi numquam repudiandae quibusdam iure
-                placeat dolore. Rem ratione nostrum, veniam quo eos fuga labore beatae sequi placeat atque eligendi, ex
-                quasi commodi.</p>
+            <div class="conteudo2">
+                <h2>Projetos do IFPR</h2>
+                <p>O IFPR proporciona a todos os seus estudantes a possibilidade de 4 cursos técnicos:</p>
+                <ul>
+                    <li>Técnico em Desenvolvimento de Sistemas;</li>
+                    <li>Técnico em Meio Ambiente;</li>
+                    <li>Técnico em Edificações;</li>
+                    <li>Técnico em Aquicultura;</li>
+                </ul>
+                <p>E também cursos de graduação como o Técnico em Análise e Desenvolvimento de Sistemas e o curso de
+                    gastronomia.</p>
+                <p>Outros projetos do IFPR são o projeto IFPR Maker, onde os alunos inscritos podem aprender a mexer com
+                    as ferramentas oferecidas no colégio, como Impressora 3d, máquina laser, etc...
+                    Também temos o projeto Robótica onde os alunos podem se reunir em grupos e discutir e aprender sobre
+                    como fazer robôs seguidores de linha.
+                </p>
+            </div>
         </div>
     </div>
 
