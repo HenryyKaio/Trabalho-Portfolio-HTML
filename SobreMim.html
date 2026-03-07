@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mim</title>
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4516/4516741.png">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4658/4658800.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -18,11 +28,245 @@
             background-attachment: fixed;
             background-size: cover;
             font-size: larger;
+            display: flex;
         }
+
+        .home {
+            position: absolute;
+            top: 20px;
+            /* Distância do topo */
+            right: 30px;
+            /* Distância da direita */
+            width: 43px;
+            /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            content: url(https://cdn-icons-png.flaticon.com/128/3917/3917033.png);
+            transition: content 0.5s;
+        }
+
+        .home:hover {
+            content: url(https://cdn-icons-png.flaticon.com/128/3917/3917032.png);
+        }
+
+        .barraLateral {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 460px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(131, 61, 196);
+            box-shadow: 7px 5px 10px rgb(70, 1, 110);
+
+
+        }
+
+        .barraLateral h2 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-family: "Spicy Rice", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(233, 216, 216);
+            font-size: 35px;
+        }
+
+        .barraLateral p {
+            margin-bottom: 10px;
+            font-family: "Iceberg", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+
+        }
+
+        .barraLateral ul {
+            list-style: square;
+            margin-left: 20px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .barraLateral li {
+            margin: 15px 0px 15px 0px;
+        }
+
+
+
+        .perfil {
+            display: flex;
+            gap: 20px;
+        }
+
+        .barraLateral img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .legendaImagem {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+
+        .legendaImagem h3 {
+            font-family: "MonteCarlo", cursive;
+            font-weight: 700;
+            font-style: normal;
+            font-size: xx-large;
+            margin-bottom: 10px;
+        }
+
+        .legendaImagem p {
+            color: rgba(255, 255, 255, 0.753);
+        }
+
+        #projetos {
+            position: absolute;
+            top: 30px;
+            right: 180px;
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+        }
+
+        #projetos::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #43a7dd;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        #projetos:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .instagram {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .instagram img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .instagram:hover {
+            transform: scale(1.2);
+        }
+
+        .github {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .github img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .github:hover {
+            transform: scale(1.2);
+        }
+
+        .texto{
+            margin-top: 100px;
+            padding: 60px;
+        }
+
+        .texto h1{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
     </style>
 
 </head>
+
 <body>
+
     
+    <a href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/3917/3917033.png" alt="" class="home">
+    </a>
+
+    <a href="MeusProjetos.html" id="projetos">Meus Projetos</a>
+
+    <a href="https://www.instagram.com/hkaiojack/" class="instagram"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiHVhg2FAN8Md31MZX9Trr6NmMr-sda7tzQ&s"
+            alt="Instagram"></a>
+
+    <a href="https://github.com/HenryyKaio" class="github"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKsrv2oCd-ebfgI95Xm6pqcsEh3gLJodqRA&s"
+            alt="Github"></a>
+
+    <div class="barraLateral">
+        <div class="perfil">
+            <img src="Henry.jpg" alt="">
+            <div class="legendaImagem">
+                <h3>Henry Kaio Jackowski</h3>
+                <p>Estudante do segundo ano do Técnico em Desenvolvimento de Sistemas </p>
+            </div>
+        </div>
+
+
+
+        <h2>Minhas Qualificações:</h2>
+        <ul>
+            <li>Experiência em HTML e CSS intermediário;</li>
+            <li>Experiência em PHP básico iniciante;</li>
+            <li>Experiência em Javascript Básico;</li>
+            <li>Excel intermediário;</li>
+        </ul>
+
+        <h2>Contato:</h2>
+        <p>henr.educ13@gmail.com</p>
+        <p>55 9913425850<i>(número fictício)</i></p>
+
+
+    </div>
+
+    <div class="texto">
+    <h1>Um pouco mais sobre mim: </h1>
+    <p> Nascido em Ijuí-RS, estudei boa parte do tempo na Escola Estadual de Ensino Fundamental Luiz Fogliatto, onde cursei até o oitavo ano. A partir do oitavo ano eu comecei a estudar na escola Municipal Doutor Ruy Ramos, onde já tinha interesse por programação. Em 2020, fiz um curso básico de HTML e CSS EAD pelo site da fundação Bradesco, onde aprendi sobre listas, tabelas, links e formulários.</p>
+    <p> Em 2024, ingressei no ensino médio ao técnico em Informática, pela Escola Técnica Estadual 25 de julho onde, no primeiro semestre do curso, aprendi na matéria de Desenvolvimento Web um pouco mais sobre as tags html, divs e outros projetos de criação de sites, embora a metodologia de ensino não tenha sido a melhor.</p>
+    <p> Me mudei para Foz do Iguaçu e em março de 2025 entrei para o Instituto Federal do Paraná campus Foz do Iguaçu, no curso Téncico em Desenvolvimento de Sistemas, com o intuito de aprender mais da Área de TI, mas me especializando em Desenvolvimento de sites e aplicações.</p>
+    <p>No primeiro ano, aprendi as estruturas básicas de algoritmos como estruturas booleanas, laços de repetições, funções, etc... e aprendi a linguagem de programação PHP e programação básica em Shell Script</p>
+    <p>Agora, estudando de novo html e css, aprendi um pouco mais sobre Desenvolvimento Web, incluindo dicas valiosas de hospedagem de site e um polimento melhor em CSS.</p>
+</div>
+
+
 </body>
+
 </html>
