@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/4658/4658800.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(71, 202, 202);
+            background-image: linear-gradient(to right, rgb(75, 163, 245), rgb(63, 15, 196));
+            background-attachment: fixed;
+            background-size: cover;
+            font-size: larger;
+        }
+
+        .home {
+            position: absolute;
+            top: 20px;
+            /* Distância do topo */
+            right: 30px;
+            /* Distância da direita */
+            width: 53px;
+            /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            content: url(https://cdn-icons-png.flaticon.com/128/3917/3917033.png);
+            transition: content 0.5s;
+        }
+
+        .home:hover {
+            content: url(https://cdn-icons-png.flaticon.com/128/3917/3917032.png);
+        }
+
+        #SobreMim {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: 36px;
+        }
+
+
+        #SobreMim::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #270585;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        #SobreMim:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .menu {
+            height: 100px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 70px;
+            color: rgb(255, 231, 231);
+            text-shadow: 5px 5px 6px rgb(0, 0, 0);
+        }
+
+        .projetos{
+            margin: 60px;
+            display:flex;
+            justify-content: space-between;
+            padding: 0;
+            gap: 40px;
+        }
+        .projetos li{
+            list-style: none;
+            width: 33.3%;
+        }
+
+        .projetos img{
+            width: 100%;
+            height: auto;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .projetos img:hover{
+            transform: scale(1.06);
+            box-shadow: 10px 10px 10px black;
+        }
+
+        .instagram {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .instagram img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .instagram:hover {
+            transform: scale(1.2);
+        }
+
+        .github {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 555ms;
+            transform: translateX(0px) scale(1.0);
+        }
+
+        .github img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .github:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="index.html">
+            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917033.png" alt="" class="home">
+        </a>
+        
+
+        <a href="SobreMim.html" id="SobreMim">Sobre Mim</a>
+    </div>
+
+    <a href="https://www.instagram.com/hkaiojack/" class="instagram"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiHVhg2FAN8Md31MZX9Trr6NmMr-sda7tzQ&s"
+            alt="Instagram"></a>
+
+    <a href="https://github.com/HenryyKaio" class="github"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKsrv2oCd-ebfgI95Xm6pqcsEh3gLJodqRA&s"
+            alt="Github"></a>
+
+    <h1>Meus Projetos HTML</h1>
+
+        <ul class="projetos">
+            <li><a href=""><img src="Portfólio.png" alt="Portfólio"></a></li>
+            <li><a href=""><img src="Harry.png" alt="Harry Potter Wiki"></a></li>
+            <li><a href=""><img src="Dino.png" alt="Lista do Dino"></a></li>
+
+        </ul>
+
+</body>
+
+</html>
