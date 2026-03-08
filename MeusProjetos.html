@@ -86,7 +86,7 @@
         }
 
         .projetos{
-            margin: 60px;
+            margin: 0px 50px 0px 50px;
             display:flex;
             justify-content: space-between;
             padding: 0;
@@ -107,6 +107,23 @@
         .projetos img:hover{
             transform: scale(1.06);
             box-shadow: 10px 10px 10px black;
+        }
+
+        .titulos{
+            margin-top: 30px;
+            margin-right: 16px;
+            margin-left:20px;
+            display:flex;
+            gap: 50px;
+            justify-content: space-around;
+            align-items: center;
+            padding:20px;
+        }
+
+        .titulos h3{
+            text-align:center;
+            flex:1;
+            font-size:30px;
         }
 
         .instagram {
@@ -171,20 +188,25 @@
         <a href="SobreMim.html" id="SobreMim">Sobre Mim</a>
     </div>
 
-    <a href="https://www.instagram.com/hkaiojack/" class="instagram"><img
+    <a href="https://www.instagram.com/hkaiojack/" class="instagram" target="_blank"><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiHVhg2FAN8Md31MZX9Trr6NmMr-sda7tzQ&s"
             alt="Instagram"></a>
 
-    <a href="https://github.com/HenryyKaio" class="github"><img
+    <a href="https://github.com/HenryyKaio" class="github" target="_blank"><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKsrv2oCd-ebfgI95Xm6pqcsEh3gLJodqRA&s"
             alt="Github"></a>
 
     <h1>Meus Projetos HTML</h1>
 
+        <div class="titulos">
+            <h3>Portfólio</h3>
+            <h3>Harry Wiki</h3>
+            <h3>Lista Dino</h3>
+        </div>
         <ul class="projetos">
-            <li><a href=""><img src="Portfólio.png" alt="Portfólio"></a></li>
-            <li><a href=""><img src="Harry.png" alt="Harry Potter Wiki"></a></li>
-            <li><a href=""><img src="Dino.png" alt="Lista do Dino"></a></li>
+            <li><a href="" target="_blank"><img src="Portfólio.png" alt="Portfólio" ></a></li>
+            <li><a href="https://henryykaio.github.io/Harry-Potter/" target="_blank"><img src="Harry.png" alt="Harry Potter Wiki"></a></li>
+            <li><a href="https://henryykaio.github.io/Lista-do-Dino/" target="_blank"><img src="Dino.png" alt="Lista do Dino" ></a></li>
 
         </ul>
 
